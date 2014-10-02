@@ -3,7 +3,7 @@ Contributors: Webnist
 Tags: nextpage multipage
 Requires at least: 3.6
 Tested up to: 4.0
-Stable tag: 0.9.9
+Stable tag: 0.9.10
 License: GPLv2 or later
 
 MultiPage is a customizable plugin
@@ -30,6 +30,9 @@ Automatically replace the wp_link_pages. To check?
 Or the  Please insert a template.
 
 == Changelog ==
+= 0.9.10 =
+Fix
+
 = 0.9.9 =
 Add First page link
 Add Last page link

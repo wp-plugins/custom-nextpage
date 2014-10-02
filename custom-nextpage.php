@@ -4,7 +4,7 @@ Plugin Name: Custom Nextpage
 Plugin URI: http://wordpress.org/plugins/custom-nextpage/
 Description: MultiPage is a customizable plugin. Can any title on the page.
 Author: Webnist
-Version: 0.9.9
+Version: 0.9.10
 Author URI: http://profiles.wordpress.org/webnist
 License: GPLv2 or later
 Text Domain: custom-nextpage
@@ -158,10 +158,10 @@ class CustomNextPage extends CustomNextPageInit {
 				$last_link = _wp_link_page( $numpages );
 				$link      = _wp_link_page( $i );
 				if ( $show_adjacent )
-					$output .= '<li class="next">' . $last_link . $nextpagelink . '</a></li>';
+					$output .= '<li class="next">' . $link . $nextpagelink . '</a></li>';
 
 				if ( $show_boundary )
-					$output .= '<li class="last">' . $link . $lastpagelink . '</a></li>';
+					$output .= '<li class="last">' . $last_link . $lastpagelink . '</a></li>';
 			}
 			$output .= '</ul>' ."\n";
 			$output .= '</div>' ."\n";
