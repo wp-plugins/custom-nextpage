@@ -37,9 +37,8 @@ Can any title on the page.
 
 Automatically replace the wp_link_pages. To check?
 Or the  Please insert a template.
-```
-<?php if ( function_exists( 'custom_next_page_link_pages' ) ) : custom_next_page_link_pages(); endif; ?>
-```
+
+`<?php if ( function_exists( 'custom_next_page_link_pages' ) ) : custom_next_page_link_pages(); endif; ?>`
 
 == Changelog ==
 
