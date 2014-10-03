@@ -3,31 +3,33 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Custom Nextpage 0.9.8\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/custom-nextpage\n"
-"POT-Creation-Date: 2014-09-24 07:05:35+00:00\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/custom-nextpage\n"
+"POT-Creation-Date: 2014-10-03 04:12:45+00:00\n"
+"PO-Revision-Date: 2014-10-03 13:21+0900\n"
+"Last-Translator: Webnist <webnist@webnist.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-09-24 16:10+0900\n"
-"Last-Translator: Webnist <webnist@webnist.org>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: Poedit 1.6.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language: ja\n"
 
-#: custom-nextpage.php:48 includes/class-admin-menu.php:203
+#: custom-nextpage.php:50 custom-nextpage.php:63
+#: includes/class-admin-menu.php:316
 msgid "&#171;"
 msgstr "&#187;"
 
-#: custom-nextpage.php:49 includes/class-admin-menu.php:202
+#: custom-nextpage.php:51 custom-nextpage.php:64
+#: includes/class-admin-menu.php:315
 msgid "&#187;"
 msgstr "&#187;"
 
-#: custom-nextpage.php:50
+#: custom-nextpage.php:52 custom-nextpage.php:65
 msgid "&gt;"
 msgstr "&gt;"
 
-#: custom-nextpage.php:51
+#: custom-nextpage.php:53 custom-nextpage.php:66
 msgid "&lt;"
 msgstr "&lt;"
 
@@ -44,69 +46,97 @@ msgid "Cancel"
 msgstr "キャンセル"
 
 #. Plugin Name of the plugin/theme
-#: includes/class-admin-menu.php:12
+#: includes/class-admin-menu.php:15
 msgid "Custom Nextpage"
 msgstr "カスタムネクストページ"
 
-#: includes/class-admin-menu.php:16
+#: includes/class-admin-menu.php:44
 msgid "Set Custom Nextpage"
 msgstr "Custom Nextpage 設定"
 
-#: includes/class-admin-menu.php:25
+#: includes/class-admin-menu.php:54
 msgid "Convert to new options"
 msgstr "新しいオプションに変換します。"
 
-#: includes/class-admin-menu.php:26 includes/class-admin-menu.php:195
+#: includes/class-admin-menu.php:55 includes/class-admin-menu.php:308
 msgid "Convert"
 msgstr "コンバート"
 
-#: includes/class-admin-menu.php:28
+#: includes/class-admin-menu.php:57
 msgid "Setting initialization"
 msgstr "設定の初期化"
 
-#: includes/class-admin-menu.php:29 includes/class-admin-menu.php:216
+#: includes/class-admin-menu.php:58 includes/class-admin-menu.php:329
 msgid "Initialization"
 msgstr "初期化"
 
-#: includes/class-admin-menu.php:39
+#: includes/class-admin-menu.php:69
 msgid "General"
 msgstr "基本設定"
 
-#: includes/class-admin-menu.php:46
+#: includes/class-admin-menu.php:76
 msgid "Automatically replace the wp_link_pages."
 msgstr "自動で wp_link_pages を置き換える。"
 
-#: includes/class-admin-menu.php:58
+#: includes/class-admin-menu.php:88
 msgid "Before Text"
 msgstr "タイトルナビゲーションの前に入れるテキスト。"
 
-#: includes/class-admin-menu.php:69
+#: includes/class-admin-menu.php:99
 msgid "After Text"
 msgstr "タイトルナビゲーションの後ろに入れるテキスト。"
 
-#: includes/class-admin-menu.php:81
+#: includes/class-admin-menu.php:111
 msgid "The first and last page links displayed."
 msgstr "最初と最後のリンクを表示する"
 
-#: includes/class-admin-menu.php:93
+#: includes/class-admin-menu.php:123
 msgid "Next and previous page links to display."
 msgstr "次と前のリンクを表示する"
 
-#: includes/class-admin-menu.php:105
+#: includes/class-admin-menu.php:135
 msgid "Text For First Page"
 msgstr "最初のページリンクのテキスト"
 
-#: includes/class-admin-menu.php:117
+#: includes/class-admin-menu.php:147
 msgid "Text For Last Page"
 msgstr "最後のページリンクのテキスト"
 
-#: includes/class-admin-menu.php:129
+#: includes/class-admin-menu.php:159
 msgid "Text For Next Page"
 msgstr "次のページリンクのテキスト"
 
-#: includes/class-admin-menu.php:141
+#: includes/class-admin-menu.php:171
 msgid "Text For Previous Page"
 msgstr "前のページリンクのテキスト"
+
+#: includes/class-admin-menu.php:183
+msgid "Style"
+msgstr "スタイル"
+
+#: includes/class-admin-menu.php:190
+msgid "Select Style type"
+msgstr "スタイルの選択"
+
+#: includes/class-admin-menu.php:197
+msgid "Default"
+msgstr "デフォルト"
+
+#: includes/class-admin-menu.php:198 includes/class-admin-menu.php:207
+msgid "Style Edit"
+msgstr "スタイル編集"
+
+#: includes/class-admin-menu.php:199
+msgid "Disable"
+msgstr "無効化"
+
+#: includes/class-admin-menu.php:215
+msgid ""
+"Press ctrl-space to activate autocompletion. <span class=\"button button-"
+"primary\" id=\"reset-css\">Reset</span>"
+msgstr ""
+"ctrl-space で自動補完が表示されます。 <span class=\"button button-primary\" "
+"id=\"reset-css\">CSSリセット</span>"
 
 #: includes/tinymce/plugins/customnextpage/langs/langs.php:5
 #: includes/tinymce/plugins/customnextpage/langs/langs.php:6
