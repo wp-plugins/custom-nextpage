@@ -4,7 +4,7 @@ Plugin Name: Custom Nextpage
 Plugin URI: http://wordpress.org/plugins/custom-nextpage/
 Description: MultiPage is a customizable plugin. Can any title on the page.
 Author: Webnist
-Version: 1.0.4
+Version: 1.0.6
 Author URI: http://profiles.wordpress.org/webnist
 License: GPLv2 or later
 Text Domain: custom-nextpage
@@ -39,7 +39,7 @@ class CustomNextPageInit {
 		$this->version         = $data['ver'];
 		$this->domain          = $data['domain'];
 		$this->langs           = $data['langs'];
-		$this->css             = file_get_contents( CUSTOM_NEXTPAGE_URL . '/css/custom-nextpage-style.css' );
+		$this->css             = strip_tags( file_get_contents( CUSTOM_NEXTPAGE_DIR . '/css/custom-nextpage-style.css' ) );
 
 		$this->default_options = array(
 			'filter'           => '',
@@ -91,12 +91,13 @@ class CustomNextPage extends CustomNextPageInit {
 		if ( is_feed() || is_404() )
 			return;
 
-		$posts = $query->posts;
-		$pattern = "/\[nextpage[^\]]*\]/";
+		$posts       = $query->posts;
+		$pattern     = array( "/<.*?>\[nextpage\]<\/.*?>/", "/\[nextpage[^\]]*\]/" );
+		$replacement = array( '<!--nextpage-->', '<!--nextpage-->' );
 		$count = 0;
 		foreach ( $posts as $post ) {
 			$content = $post->post_content;
-			$query->posts[$count]->post_content = preg_replace( $pattern, '<!--nextpage-->', $content );
+			$query->posts[$count]->post_content = preg_replace( $pattern, $replacement, $content );
 			$count++;
 		}
 		return $query;
